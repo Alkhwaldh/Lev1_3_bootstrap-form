@@ -1,104 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .form-control {
+            background-color: #e9e9e9;
+            }
+            
+            .submit {
+            color: #fff;
+            background-color: #891b55;
+            }
+            </style>
 </head>
+
 <body>
-    <div class="container">
-<h1>
-    Bitte füllen Sie das Kontaktformular aus
-</h1>
+    <section id="form" class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- Title -->
+                <div class="pb-2">
+                    <p class="lead">Bitte füllen Sie das Kontaktformular aus</p>
+                </div>
+                <div class="pb-5">
+                    <!-- Text -->
+                    <p class="lead">
+                        Bitte füllen Sie das K ontaktformular aus, wenn Sie eine Serviceanfrage
+                        stellen, uns Feedback geben möchten oder von einer Annullierung
+                        betroffen waren.
+                    </p>
+                </div>
 
-   <p> Bitte füllen Sie das Kontaktformular aus, wenn Sie eine Serviceanfrage stellen, uns Feedback geben möchten oder von einer Annullierung betroffen waren.</p>
-      
-   <form class="form-row">
-   
-      <div class="form-group col-md-6">
-        <input type="text" class="form-control" placeholder="Vorname">
+
+                <!-- Form -->
+                <form class="">
+                    <!-- Vorname -->
+                    <div class="form-row">
+                        <div class="form-group input-block col-md-6">
+                            <input type="text" class="form-control rounded-0" id="vorname" placeholder="Vorname" />
+                        </div>
+
+                        <!-- Nachname -->
+                        <div class="form-group input-block col-md-6">
+                            <input type="text" class="form-control rounded-0" id="nachname" placeholder="nachname" />
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group input-block col-md-6">
+                            <input type="text" class="form-control rounded-0" id="Email" placeholder="Email" />
+                        </div>
+
+                        <!-- Buchungsnummer -->
+                        <div class="form-group input-block col-md-6">
+                            <input type="text" class="form-control rounded-0" id="Buchungsnummer"
+                                placeholder="Buchungsnummer" />
+                        </div>
+
+                        <!-- Boomerang Club Mitglieds-Nr. -->
+                        <div class="form-group input-block col-md-6">
+                            <input type="text" class="form-control rounded-0" id="Boomerang" placeholder="Boomerang" />
+                        </div>
+
+                        <!-- Miles More Mitglieds-Nr. -->
+                        <div class="form-group input-block col-md-6">
+                            <input type="text" class="form-control rounded-0" id="Miles" placeholder="Miles" />
+                        </div>
+
+                        <!-- Form Select Thema auswählen -->
+                        <div class="form-group col-md-12">
+                            <select class="form-control  rounded-0" id="exampleFormControlSelect1">
+                                <option disabled selected>Thema auswahlen</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                        <!-- Form Select Rubrik auswählen -->
+                        <div class="form-group col-md-12">
+                            <select class="form-control rounded-0" id="exampleFormControlSelect1">
+                                <option disabled selected>Rubrik auswahlen</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                        <!-- Form Textarea -->
+                        <div class="form-group col-md-12 ">
+                            <textarea placeholder="Ihre Nachricht" class="form-control  rounded-0"
+                                id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>
+                        <!-- Button Submit Anfrage abschicken -->
+                        <button type="submit" class="btn submit rounded-0 offset-md-8 col-md-4 <!-- text-nowrap -->">
+                            Anfrage  abschicken</button>
+                    </div>
+                </form>
+            </div>
         </div>
-
-    <div class="form-group col-md-6"> 
-        <input type="text" class="form-control" placeholder="Nachname">
-    </div>
-    
-    <!-- 2 Groupe -->
-    
-    <div class="form-group col-md-6"> 
-        <input type="email" class="form-control" placeholder="E-mail Adresse ">
-    </div>
-    
-    <div class="form-group col-md-6"> 
-        <input type="text" class="form-control" placeholder="Buchungsnummer">
-    </div>
-    
-    <!-- 3 Groupe -->
-    
-    
-    <div class="form-group col-md-6"> 
-        <input type="text" class="form-control" placeholder="Club Mitglied N.">
-    </div>
-    
-    <div class="form-group col-md-6"> 
-        <input type="text" class="form-control" placeholder="Miels & More Mitglieds N.">
-    </div>
-    
-</form>
-    
-    <!-- 4 grouppe -->
-    
-    <form class="form-row">
-        <div class="form-group col-md-12">
-            <select class="form-control form-control-lg" id="exampleFormControlSelect1">
-                <option>First Class</option>
-          <option>Second Class</option>
-          <option>Third Class</option>
-          <option>Fourth Class</option>
-          <option> Funth Class</option>
-        </select>
-      </div>
-
-    <div class="form-group col-md-12">
-        <select class="form-control form-control-lg" id="exampleFormControlSelect1">
-          <option>Rubrik auswahl</option>
-          <option>Second Class</option>
-          <option>Third Class</option>
-          <option>Fourth Class</option>
-          <option> Funth Class</option>
-        </select>
-      </div>
-
-      <div class="form-group col-md-12 input-block">
-        
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder=" Ihre Nachricht"></textarea>
-      </div>
-     
-      <button type="submit" class="btn btn-primary offset-md-11">Submit</button>
-</form>
-
-
-
-
-
-
-
-
-
-          
-
-
-
-
-    </div>
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  
+    </section>
 </body>
+
 </html>
